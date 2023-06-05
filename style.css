@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(./assets/Background.png);
+    background-repeat: no-repeat center;
+    background-size: cover;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+
+    padding: 2em;
+}
+
+@keyframes entering {   
+    0% {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    100% {
+        opacity: 0.7;
+        transform: translateY(0);
+    }       
+}
+
+h2 {
+    margin: 0.75em 0;
+}
+
+.container {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registration {
+    background: #ffffff;
+    width: 450px;
+    border-radius: 8px;
+    opacity: 0.7;
+    box-shadow: 0 0 5px #3b3b3b;
+
+    padding: 2em;
+    text-align: center;
+   
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    animation: entering 0.7s ease-in-out;
+}
+
+.form {
+    width: 300px;
+}
+
+.registration a {
+    background-color: black;
+    border-radius: 8px;
+    color: #ffffff;
+    box-shadow: 0 0 5px #3b3b3b;
+
+    padding: 15px;
+}
+
+.student {
+    display: flex;
+    flex-direction: column;
+}
+
+.student label {
+    text-align: start;
+}
+
+.student input {
+    background-color: #A1A1AA;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 8px 10px 5px 10px;
+}
+
+.fiel {
+    display: flex;
+    flex-direction: column; 
+}
+
+.fiel label {
+    text-align: start;
+}
+
+.fiel input {
+    background-color: #A1A1AA;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 8px 10px 5px 10px;
+}
+
+.state-items {
+    display: flex; 
+    justify-content: center;
+    gap: 2px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card label {
+    text-align: start;
+}
+
+.card input {
+    background-color: #A1A1AA;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 8px 10px 5px 10px;
+}
+
+.card validity {
+    display: flex;
+}
+
+.send:hover {
+    transform: scale(1.1);  
+}

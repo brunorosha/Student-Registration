@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Student Registration</title>
+  </head>
+
+  <body>
+    <!--Principal-->
+    <main class="container">
+        <!-- Student Registration -->
+      <div class="registration">
+        <h1>Student Registration</h1>
+        <form class="form" action="https://wa.me/5585907413006" method="get">
+
+        <div class="student">
+          <label class="student-items-label" for="name"> Enter you name: </label>
+          <input class="student-items-campo" type="text" name="name" id="name" placeholder="Matheus Gonçalves Coelho" required />
+          <br />
+          <label class="student-items" for="email"> E-mail: </label>
+          <input class="student-items-campo" type="email" name="email" id="email" placeholder="matheus@gmail.com" required />
+          <br />
+          <label class="student-items" for="age"> Age: </label>
+          <input class="student-items-campo" type="number" name="age" id="age" min="0" max="120" placeholder="23" required />
+        </div>
+
+          <br />
+          <hr />
+
+          <!-- Customer Fiel -->
+          <div class="fiel">
+            <h2> Address </h2>
+            <label for="cep"> CEP: </label>
+            <input type="text" name="cep" id="cep" pattern="[0-9]{5}-[0-9]{3}" placeholder="_____-___" required />
+          
+          <br />
+
+          <div class="state-items">
+            <label for="state"> State: </label>
+            <select id="state" name="state">
+                <option value="sp">SP</option>
+                <option value="rj">RJ</option>
+                <option value="ce">CE</option>
+                <option value="mg">MG</option>
+                <option value="ba">BA</option>
+            </select>
+        </div>
+
+          <br />
+
+          <label for="city"> City: </label>
+          <input type="text" name="city" id="city" placeholder="Fortaleza" required />
+
+          <br />
+
+          <label for="street"> Street Number: </label>
+          <input type="text" name="street" id="street" placeholder="Rua Bandeirantes" required />
+          <br />
+          <label for="number"> Number: </label>
+          <input type="text" name="number" id="number" placeholder="1975" required />
+
+          <br />
+          <hr />
+
+        </div>
+
+        <!-- Payment Card -->
+        <div class="card">
+          <h2>Payment Card</h2>
+          <label for="card"> Number card: </label>
+          <input type="text" name="card" id="card" placeholder="____-____-____-____" required />
+          
+          <br />
+
+          <label for="namecard"> Name Card: </label>
+          <input type="text" name="namecard" id="namecard" placeholder="Cardholder Name" required />
+
+          <br />
+        
+          <div class="validity">
+          <label for="validity"> Validity: </label>
+          <select name="validity" id="validity">
+            <option value="mon">Month</option>
+            <option value="jan">January</option>
+            <option value="feb">February</option>
+            <option value="mar">March</option>
+            <option value="apr">April</option>
+            <option value="may">May</option>
+            <option value="jun">June</option>
+            <option value="jul">July</option>
+            <option value="aug">August</option>
+            <option value="sep">September</option>
+            <option value="oct">October</option>
+            <option value="nov">November</option>
+            <option value="dec">December</option>
+          </select>
+          <select name="year" id="year">
+            <option value="yea">Year</option>
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+          </select>
+        </div>
+
+          <br />
+
+          <label for="cvv"> CVV: </label>
+          <input type="text" name="cvv" id="cvv" maxlength="3" placeholder="cvv" required />
+
+          <br />
+          <hr />
+        </div>
+
+        <!-- Botão de enviar formulário -->
+        </form>
+        <a class="send" href="https://github.com/brunorocha-dev"> Send </a>
+      </div>
+    </main>
+  </body>
+</html>
